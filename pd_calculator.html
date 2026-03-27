@@ -137,10 +137,10 @@ input:focus {
 <body>
 <div class="container">
 
-<h1>Pickleball Summary</h1>
+<h1>Point Differential Calculator <h1>
 
 <div class="summary">
-  <div class="summary-row"><span>Team</span><span>G</span><span>M</span><span>PD</span></div>
+  <div class="summary-row"><span>Team</span><span>Games Won</span><span>Matches Won</span><span>Total Point Differential</span></div>
   <div class="summary-row"><span>Team 1</span><span id="g1">0</span><span id="m1">0</span><span id="p1">0</span></div>
   <div class="summary-row"><span>Team 2</span><span id="g2">0</span><span id="m2">0</span><span id="p2">0</span></div>
   <div class="summary-row"><span>Team 3</span><span id="g3">0</span><span id="m3">0</span><span id="p3">0</span></div>
@@ -261,10 +261,10 @@ function calc(){
     resEl.innerHTML="";
 
     if(winner==="A"){
-      resEl.innerHTML=`<span class="win">${teams[match.a]} WIN</span>`;
+      resEl.innerHTML=`<span class="win">${teams[match.a]} WINS</span>`;
       sum[match.a].m++;
     } else if(winner==="B"){
-      resEl.innerHTML=`<span class="win">${teams[match.b]} WIN</span>`;
+      resEl.innerHTML=`<span class="win">${teams[match.b]} WINS</span>`;
       sum[match.b].m++;
     }
 
